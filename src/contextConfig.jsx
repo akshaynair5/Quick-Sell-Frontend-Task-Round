@@ -106,7 +106,7 @@ export const ContentContextProvider =({children})=>{
         localStorage.setItem('contentViewMode', JSON.stringify(contentViewMode))
     },[contentViewMode]);
     return(
-        <ContentContext.Provider value={{contentViewMode,contentViewMode,ticketsByPriority,ticketsByUser,ticketsByStatus,setCVM}}>
+        <ContentContext.Provider value={{contentViewMode,ticketsByPriority,ticketsByUser,ticketsByStatus,setCVM}}>
             {children}
         </ContentContext.Provider>
     )
