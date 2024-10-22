@@ -1,0 +1,94 @@
+.navbar {
+    position: fixed;
+    width: 100%; // Use percentage instead of vw for fluidity
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 8vh; // Changed from vh to rem for better scaling
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px;
+    align-items: center;
+    display: flex;
+    padding-left: 3rem; // Use rem for padding
+    z-index: 10;
+
+    .options-btn {
+        padding: 0.2rem;
+        font-size: 1.2rem;
+        border: 2px solid #c7bebf;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #333;
+        outline: none;
+        transition: border-color 0.3s ease;
+        display: flex;
+        align-items: center;
+
+        p {
+            color: black;
+            align-self: center;
+            font-size: 1rem; // Use rem for better scalability
+            margin: 0 1rem; // Use shorthand for margin with rem units
+            padding: 0;
+        }
+
+        img {
+            height: 100%;
+            align-self: center;
+        }
+    }
+
+    .options-view {
+        background-color: rgb(250, 250, 250);
+        color: black;
+        min-width: 22rem;
+        position: fixed;
+        top: 7vh; // Adjust to rem
+        box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px;
+        border-radius: 10px;
+        z-index: 10;
+        border: 2px solid #c7bebf;
+        padding-left: 1.4rem;
+
+        .option {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: 1rem 0; // Use rem for spacing
+            font-family: 'Arial', sans-serif;
+
+            .title {
+                font-size: 1rem;
+                font-weight: bold;
+                color: #999;
+                margin-right: 0.2rem;
+                white-space: nowrap;
+                width: 45%;
+                text-align: left;
+                letter-spacing: 0.001rem;
+            }
+
+            .options-btn {
+                padding: 0.4rem;
+                font-size: 1rem;
+                border: 2px solid #c7bebf;
+                border-radius: 5px;
+                background-color: #fff;
+                color: #333;
+                outline: none;
+                transition: border-color 0.3s ease;
+                display: flex;
+                align-items: center;
+                min-width: 40%;
+                font-weight: 550;
+
+                &:hover {
+                    border-color: #aaa;
+                }
+
+                &:focus {
+                    border-color: #666;
+                }
+            }
+        }
+    }
+}
