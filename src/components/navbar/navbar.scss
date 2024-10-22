@@ -1,14 +1,14 @@
 .navbar {
     position: fixed;
-    width: 100%; // Use percentage instead of vw for fluidity
+    width: 100%; 
     top: 0;
     left: 0;
     background-color: white;
-    height: 8vh; // Changed from vh to rem for better scaling
+    height: 8vh; 
     box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px;
     align-items: center;
     display: flex;
-    padding-left: 3rem; // Use rem for padding
+    padding-left: 3rem; 
     z-index: 10;
 
     .options-btn {
@@ -26,8 +26,8 @@
         p {
             color: black;
             align-self: center;
-            font-size: 1rem; // Use rem for better scalability
-            margin: 0 1rem; // Use shorthand for margin with rem units
+            font-size: 1rem; 
+            margin: 0 1rem; 
             padding: 0;
         }
 
@@ -42,7 +42,7 @@
         color: black;
         min-width: 22rem;
         position: fixed;
-        top: 7vh; // Adjust to rem
+        top: 7vh; 
         box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 8px;
         border-radius: 10px;
         z-index: 10;
@@ -53,7 +53,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin: 1rem 0; // Use rem for spacing
+            margin: 1rem 0; 
             font-family: 'Arial', sans-serif;
 
             .title {

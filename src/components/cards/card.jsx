@@ -22,19 +22,17 @@ function Card({content}) {
     useEffect(() => {
       const sortedTickets = [...content.tickets].sort((a, b) => {
         if (contentViewMode.ordering === 'Priority') {
-          // Assuming priority is a number or defined ranking
-          return b.priority - a.priority; // Ascending order
+          return b.priority - a.priority;
         } else if (contentViewMode.ordering === 'Title') {
             console.log('ll')
-          return a.title.localeCompare(b.title); // Alphabetical order
+          return a.title.localeCompare(b.title);
         }
-        return 0; // No sorting
+        return 0;
       });
       
       setSortedTickets(sortedTickets);
-    //   console.log(sortedTickets);
     
-    }, [contentViewMode]); // Add dependencies
+    }, [contentViewMode]);
 
   const imageMap = {
     'Backlog': Backlog,

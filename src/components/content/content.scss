@@ -12,35 +12,35 @@
 }
   
 .content::-webkit-scrollbar {
-    width: 8px; /* Adjust this value for thinner scrollbar */
+    width: 8px; 
 }
 
 .content::-webkit-scrollbar-thumb {
-    background-color: #888; /* Change this color to your preference */
-    border-radius: 10px; /* Optional: rounded corners for the thumb */
+    background-color: #888; 
+    border-radius: 10px; 
 }
 
 .content::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Change color on hover */
+    background-color: #555; 
 }
 
 .content::-webkit-scrollbar-track {
-    background: transparent; /* Hides the scrollbar track */
+    background: transparent; 
 }
 
 .content::-webkit-scrollbar:horizontal {
-    height: 8px; /* Adjust this value for thinner horizontal scrollbar */
+    height: 8px; 
 }
 
 .content::-webkit-scrollbar-thumb:horizontal {
-    background-color: #888; /* Change this color to your preference */
-    border-radius: 10px; /* Optional: rounded corners for the thumb */
+    background-color: #888; 
+    border-radius: 10px; 
 }
 
 .content::-webkit-scrollbar-thumb:horizontal:hover {
-    background-color: #555; /* Change color on hover */
+    background-color: #555; 
 }
 
 .content::-webkit-scrollbar-track:horizontal {
-    background: transparent; /* Hides the scrollbar track */
+    background: transparent; 
 }
