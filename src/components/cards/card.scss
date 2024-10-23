@@ -11,8 +11,21 @@
         align-items: center;
 
         .card-icon{
-            height: 1.2rem;
+            align-self: center;
+            height: 1.5rem;
             margin-left: 2%;
+            display: flex;
+            
+            .active-status{
+                height: 0.8rem; 
+                width: 0.8rem; 
+                background-color: rgb(160, 164, 160); 
+                border-radius: 50%; 
+                z-index: 10;
+                margin-left: -0.65rem;
+                margin-top: 1rem;
+            }
+
         }
 
         .card-id {

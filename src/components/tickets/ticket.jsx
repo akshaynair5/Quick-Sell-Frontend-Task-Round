@@ -37,9 +37,13 @@ function Ticket({ticket}) {
     <div className='ticket'>
         <div className='row'>
             <div className='id'>{ticket.id}</div>
-
-            <img src={user} className='profilePhoto'></img>
-            <div className='active-status' style={{backgroundColor: ticket.user.available == true ? 'rgb(17, 177, 17)' : 'rgb(160, 164, 160)'}}></div>
+            {
+                contentViewMode.grouping != 'User' && 
+                <>
+                    <img src={user} className='profilePhoto'></img>
+                    <div className='active-status' style={{backgroundColor: ticket.user.available == true ? 'rgb(17, 177, 17)' : 'rgb(160, 164, 160)'}}></div>
+                </>
+            }
         </div>
         <div className='row2'>
             {

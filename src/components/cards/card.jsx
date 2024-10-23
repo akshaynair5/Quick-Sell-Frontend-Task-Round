@@ -13,6 +13,7 @@ import high_priority from '../../assets/Img - High Priority.svg'
 import urgent_priority from '../../assets/SVG - Urgent Priority colour.svg'
 import Cancelled from '../../assets/Cancelled.svg'
 import Done from '../../assets/Done.svg'
+import user from '../../assets/user.png'
 import { ContentContext } from '../../contextConfig';
 
 function Card({content}) {
@@ -50,7 +51,16 @@ function Card({content}) {
   return (
     <div className="card">
         <div className='card-title'>
-            <img src={imageMap[content.tag]} className='card-icon'></img>
+            {
+                imageMap[content.tag] 
+                ? <img src={imageMap[content.tag]} className='card-icon'></img>
+                : (
+                    <div className='card-icon'>
+                        <img src={user} className='card-icon'></img>
+                        <div className='active-status' style={{backgroundColor: content.tickets[0].user.available ? 'rgb(17, 177, 17)' : 'rgb(160, 164, 160)'}}></div>
+                    </div>
+                )
+            }
             <div className='card-id'>{content.tag} <span>{content.tickets.length}</span> </div>
             <button className='btn'><img src={add}></img></button>
             <button className='btn'><img src={dot}></img></button>
